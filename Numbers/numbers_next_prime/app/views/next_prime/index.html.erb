@@ -1,0 +1,48 @@
+<!DOCTYPE>
+<html>
+	<%= render "/layouts/head" %>
+
+	<style type="text/css">
+		body {
+			background-color:#D1C249;
+		}
+		.form {
+			word-wrap:break-word;
+			font-size: 1.5em;
+			font-family: sans-serif;
+			background: #6E672E;
+			padding: 1.5em;
+			color:black;
+			opacity: 0.8;
+			text-align: center;
+		}
+		.num {
+			color: #000000;
+			line-height:120%;
+		}
+	</style>
+	</head>
+	<body >
+		<div class="navbar">
+	  		<div class="navbar-inner">
+	  			<%= link_to "Next prime number", "/", class: "brand" %>
+		  	</div>
+		</div>
+		<div class="row">
+		  	<div class="span10 offset2">
+		  		<div class = "form" >
+		  			<h3>Current prime count: <span style="color: #000000;"><%= p @current_prime %></span></h3>
+				  	<%= form_tag("index", method: "get") do %>
+				  		<%= hidden_field_tag "current_prime", @current_prime.to_i + 1 %>
+					 	<%= submit_tag "Next prime", class: "btn" %>
+					<% end %>
+					<% if @current_prime != 0 %>
+						<%= p @prime_list %>
+					<% end %>						
+				</div>
+			</div>
+		</div>
+			
+		</div>
+	</body>
+</html>
