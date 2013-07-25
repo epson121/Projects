@@ -1,0 +1,66 @@
+<!DOCTYPE>
+<html lang="en">
+	<head>
+		<title>My First Bitstarter</title>
+		<meta charset="utf-8">
+		<title>Bitstarter</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="description" content="Bitstarter page">
+  	<meta name="author" content="Luka">
+ 	
+ 	<%= stylesheet_link_tag    "application", :media => "all" %>
+	<%= javascript_include_tag "application" %>
+	<style type="text/css">
+		body {
+			background-color:#b0c4de;
+		}
+		.form {
+			word-wrap:break-word;
+			font-size: 1.3em;
+			font-family: sans-serif;
+			background: #3399CC;
+			padding: 0.5em;
+		}
+		.spacing {
+			height: 5em;
+			text-align: center;
+		}
+		.num {
+			color: #000000;
+			font-size: 1.5em;
+		}
+		.txt{
+			font-size: 2em;
+			color: black;
+		}
+	</style>
+	</head>
+	<body >
+		<div class="navbar">
+		  <div class="navbar-inner">
+		   <h1> Pi to the nth </h1>
+		  </div>
+		</div>
+		<div class="row">
+		  	<div class="span8 offset3">
+		  		<div class="spacing">
+		  		</div>
+		  		<div class = "form">
+				  	<%= form_tag("index", method: "get") do %>
+						<%= label_tag :q, "Enter the number of digits:", :class => 'form' %>
+					 	<%= text_field_tag :number %>
+					 	<br/>
+					 	<%= submit_tag "Compute" %>
+					<% end %>
+					<% if !@digit.nil? %>
+						<%= p "Number of digits (after the decimal point): " + @digit  %>
+						<br/><br/>
+					<% end %>
+					<span class = "num"><%= p @number %></span>
+				</div>	
+			</div>
+		</div>
+			
+		</div>
+	</body>
+</html>
