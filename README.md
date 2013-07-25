@@ -4,9 +4,9 @@ Mega Project List
 Numbers
 ---------
 
-[**Find PI to the Nth Digit**](https://github.com/epson121/Projects/tree/master/Numbers/numbers_pi) – Enter a number and have the program generate PI up to that many decimal places. Keep a limit to how far the program will go.
+[**Find PI to the Nth Digit**](https://github.com/epson121/Projects/tree/master/Numbers/numbers_pi) – Enter a number and have the program generate PI up to that many decimal places.
 
-**Fibonacci Sequence** – Enter a number and have the program generate the Fibonacci sequence to that number or to the Nth number.
+[**Fibonacci Sequence**](https://github.com/epson121/Projects/tree/master/Numbers/numbers_fibonacci_sequence) – Enter a number and have the program generate the Fibonacci sequence to the Nth number.
 
 **Prime Factorization** – Have the user enter a number and find all Prime Factors (if there are any) and display them.
 

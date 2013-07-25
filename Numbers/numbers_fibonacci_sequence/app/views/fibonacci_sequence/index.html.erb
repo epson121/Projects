@@ -1,0 +1,49 @@
+<!DOCTYPE>
+<html>
+	<%= render "/layouts/head" %>
+
+	<style type="text/css">
+		body {
+			background-color:#057D9F;
+		}
+		.form {
+			word-wrap:break-word;
+			font-size: 1.5em;
+			font-family: sans-serif;
+			background: #216477;
+			padding: 1.5em;
+			color:black;
+		}
+		.num {
+			color: #000000;
+			line-height:120%;
+		}
+	</style>
+	</head>
+	<body >
+		<div class="navbar">
+	  		<div class="navbar-inner">
+	  			<%= link_to "Fibonacci sequence", "/", class: "brand" %>
+		  	</div>
+		</div>
+		<div class="row">
+		  	<div class="span10 offset2">
+		  		<div class = "form" >
+				  	<%= form_tag("index", method: "get") do %>
+						Insert size of the sequence:<br/><br/>
+					 	<%= text_field_tag :number %>
+					 	<br/>
+					 	<%= submit_tag "Get numbers", class: "btn" %>
+					<% end %>
+					<% if !@size.nil? %>
+						<span class = "num" >Size of the sequence is: </span>
+					<% end %>
+					<span class = "num" style="color:#FF8100;" > <%= p @size %></span><br/>
+					<span class = "num"><%= p @number %></span>
+				</div>
+			</div>
+		</div>
+			
+		</div>
+	</body>
+</html>
