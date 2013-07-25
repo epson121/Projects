@@ -1,0 +1,49 @@
+<!DOCTYPE>
+<html>
+	<%= render "/layouts/head" %>
+
+	<style type="text/css">
+		body {
+			background-color:#9A1E4A;
+		}
+		.form {
+			word-wrap:break-word;
+			font-size: 1.5em;
+			font-family: sans-serif;
+			background: #683043;
+			padding: 1.5em;
+			color: white;
+		}
+		.num {
+			color: #000000;
+			line-height:120%;
+		}
+	</style>
+	</head>
+	<body >
+		<div class="navbar">
+	  		<div class="navbar-inner">
+	  			<%= link_to "Prime factorization", "/", class: "brand" %>
+		  	</div>
+		</div>
+		<div class="row">
+		  	<div class="span8 offset3">
+		  		<div class = "form" >
+				  	<%= form_tag("index", method: "get") do %>
+						Insert number for factoring:<br/><br/>
+					 	<%= text_field_tag :number %>
+					 	<br/>
+					 	<%= submit_tag "Get factors", class: "btn" %>
+					<% end %>
+					<% if !@number.nil? %>
+						<span class = "num" >Entered number is: </span>
+					<% end %>
+					<span class = "num" style="color:#FF8100;" > <%= p @number %></span><br/>
+					<span class = "num"><%= p @factors %></span>
+				</div>
+			</div>
+		</div>
+			
+		</div>
+	</body>
+</html>
