@@ -1,0 +1,89 @@
+<!DOCTYPE>
+<html>
+	<%= render "/layouts/head" %>
+
+	<style type="text/css">
+		body {
+			/*background-color:#D1C249;*/
+			background-image:url(<%= asset_path 'bg1920x1920.jpg' %>);
+			opacity: 0.9;
+		}
+		.form {
+			word-wrap:break-word;
+			font-size: 1.5em;
+			font-family: Monospace;
+			background: #F6F6ED;
+			padding: 1.5em;
+			color:black;
+			text-align: center;
+			padding-left: 0px;
+		}
+		.num {
+			color: #000000;
+			line-height:120%;
+		}
+		.antiform{
+			text-align: left;
+		}
+	</style>
+	</head>
+	<body >
+		<div class="navbar">
+	  		<div class="navbar-inner">
+	  			<%= link_to "Tile cost calculator", "/", class: "brand" %>
+		  	</div>
+		</div>
+		<div class="row">
+		  	<div class="span10 offset2">
+		  		<h3 class="form" style="font-size:3em;padding:1em;font-family:Monospace;">Tile cost calculator</h3>
+		  		<div class="row">
+		  			<div class="span5">
+		  				<div class = "form" >
+		  					<div class="antiform">
+						  	<%= form_tag("index", method: "get", class:"form-horizontal") do %>
+						  		<div class="control-group">
+						  			<%= label_tag "inputWidth", "Width (m)",  class: "control-label" %>
+						  			<div class="controls">
+						  				<%= text_field_tag 'inputWidth', nil, placeholder: "Enter width.." %>		
+						  			</div>
+						  		</div>
+						  		<div class="control-group">
+						  			<%= label_tag "inputHeight", "Height(m)",  class: "control-label" %>
+						  			<div class="controls">
+						  				<%= text_field_tag 'inputHeight', nil, placeholder: "Enter height.." %>		
+						  			</div>
+						  		</div>
+						  		<div class="control-group">
+						  			<%= label_tag "inputPrice", "Price per m2",  class: "control-label" %>
+						  			<div class="controls">
+						  				<%= text_field_tag 'inputPrice', nil, placeholder: "Enter the price per square meter" %>		
+						  			</div>
+						  		</div>
+						  		<div class="control-group">
+						  			<div class="controls">
+						  				<%= submit_tag "Calculate", class: "btn" %>		
+						  			</div>
+						  		</div>
+								<% end %>
+								</div>
+							</div>
+	  				</div>
+	  				<div class="span5">
+	  					<div class="form">
+  							<%= image_tag (asset_path "calculator.png") %>
+  							<div class="antiform">
+  								<p><br/>
+		  							<% if @ok %> 
+		  								<%= p "Area of " + @area.to_s + "m2 yields cost of " + @cost.to_s + " in your currency." %>
+	  								<% end %>
+  								</p>
+  							</div>
+	  					</div>
+						</div>
+		  		</div>
+			</div>
+		</div>
+			
+		</div>
+	</body>
+</html>
