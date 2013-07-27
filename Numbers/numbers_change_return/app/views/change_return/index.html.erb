@@ -1,0 +1,78 @@
+<!DOCTYPE>
+<html>
+	<%= render "/layouts/head" %>
+
+	<style type="text/css">
+		body {
+			background-color:#A60000;
+			opacity: 0.9;
+		}
+		.form {
+			word-wrap:break-word;
+			font-size: 1.5em;
+			font-family: Monospace;
+			background: #F6F6ED;
+			padding: 1.5em;
+			color:black;
+			text-align: center;
+			padding-left: 0px;
+		}
+		.num {
+			color: #000000;
+			line-height:120%;
+		}
+		.antiform{
+			text-align: left;
+		}
+	</style>
+	</head>
+	<body >
+		<div class="navbar">
+	  		<div class="navbar-inner">
+	  			<%= link_to "Change return", "/", class: "brand" %>
+		  	</div>
+		</div>
+		<div class="row">
+		  	<div class="span10 offset2">
+		  		<h3 class="form" style="font-size:3em;padding:1em;font-family:Monospace;">Change return</h3>
+		  		<div class="row">
+		  			<div class="span5">
+		  				<div class = "form" >
+		  					<div class="antiform">
+						  	<%= form_tag("index", method: "get", class:"form-horizontal") do %>
+						  		<div class="control-group">
+						  			<%= label_tag "inputCost", "Cost",  class: "control-label" %>
+						  			<div class="controls">
+						  				<%= text_field_tag 'inputCost', @cost, placeholder: "Enter the cost.." %>		
+						  			</div>
+						  		</div>
+						  		<div class="control-group">
+						  			<%= label_tag "inputGiven", "Money given",  class: "control-label" %>
+						  			<div class="controls">
+						  				<%= text_field_tag 'inputGiven', @given, placeholder: "Enter money given.." %>		
+						  			</div>
+						  		</div>
+						  		<div class="control-group">
+						  			<div class="controls">
+						  				<%= submit_tag "Calculate", class: "btn" %>		
+						  			</div>
+						  		</div>
+								<% end %>
+								</div>
+							</div>
+	  				</div>
+	  				<div class="span5">
+	  					<div class="form" style="font-size=0.5em;" >
+	  						<% if !@change.nil? %>
+	  							<%= p @change %><br/>
+	  							<%= p @distribution %>
+	  						<% end %>
+	  					</div>
+ 					</div>
+		  		</div>
+			</div>
+		</div>
+			
+		</div>
+	</body>
+</html>
