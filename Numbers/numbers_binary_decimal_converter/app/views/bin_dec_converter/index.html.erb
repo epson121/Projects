@@ -1,0 +1,82 @@
+<!DOCTYPE>
+<html>
+	<%= render "/layouts/head" %>
+
+	<style type="text/css">
+		body {
+			background-color:#4380D3;
+			opacity: 0.9;
+		}
+		.form {
+			word-wrap:break-word;
+			font-size: 1.5em;
+			font-family: Monospace;
+			background: #F6F6ED;
+			padding-top: 1em;
+			color:black;
+			text-align: center;
+		}
+		.num {
+			color: #000000;
+			line-height:120%;
+		}
+		.antiform{
+			text-align: left;
+		}
+	</style>
+	</head>
+	<body >
+		<div class="navbar">
+	  		<div class="navbar-inner">
+	  			<%= link_to "Binary - Decimal converter", "/", class: "brand" %>
+		  	</div>
+		</div>
+		<div class="row">
+		  	<div class="span10 offset2">
+		  		<h3 class="form" style="font-size:3em;padding:1em;font-family:Monospace;">Binary - Decimal converter</h3>
+		  		<div class="row">
+		  			<div class="span8 offset1">
+		  				<div class = "form" >
+		  					<div class="antiform">
+						  	<%= form_tag("index", method: "get", class:"form-horizontal") do %>
+						  		<div class="control-group">
+						  			<%= label_tag "inputBinary", "Binary number",  class: "control-label" %>
+						  			<div class="controls">
+						  				<%= text_field_tag 'inputBinary', @bin, placeholder: "Enter binary number..", :class=>"input-xxlarge" %>		
+						  			</div>
+						  		</div>
+						  		<div class="control-group">
+						  			<%= label_tag "inputDecimal", "Decimal number",  class: "control-label" %>
+						  			<div class="controls">
+						  				<%= text_field_tag 'inputDecimal', @dec, placeholder: "OR Enter decimal number", :class=>"input-xxlarge"%>		
+						  			</div>
+						  		</div>
+						  		<div class="row">
+						  			<div class="span3" style="text-align:center;color:#FF0000;">
+						  				<%= p @error %>
+							  		</div>
+							  		<div class="span1">
+							  			<div class="control-group">
+								  			<div class="controls">
+								  				<%= link_to "Clear", "/", class: "btn btn-warning btn-large" %>
+								  			</div>
+								  		</div>
+							  		</div>
+		  							<div class="span1">
+								  		<div class="control-group">
+								  			<div class="controls">
+								  				<%= submit_tag "Calculate", class: "btn btn-success btn-large" %>		
+								  			</div>
+								  		</div>
+							  		</div>
+						  		</div>
+								<% end %>
+								</div>
+							</div>
+	  				</div>
+		  		</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
