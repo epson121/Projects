@@ -1,0 +1,82 @@
+<!DOCTYPE>
+<html>
+	<%= render "/layouts/head" %>
+
+	<style type="text/css">
+		body {
+			background-color:#A60000;
+			opacity: 0.9;
+      font-family: Monospace;
+		}
+		.form {
+			word-wrap:break-word;
+			font-size: 1.5em;
+			background: #F6F6ED;
+			padding: 1.5em;
+			color:black;
+			text-align: center;
+			padding-left: 0px;
+		}
+		.num {
+			color: #000000;
+			line-height:120%;
+		}
+		.antiform{
+			text-align: left;
+		}
+	</style>
+	</head>
+	<body >
+		<div class="navbar">
+	  		<div class="navbar-inner">
+	  			<%= link_to "Calculator", "/", class: "brand" %>
+		  	</div>
+		</div>
+		<div class="row-fluid">
+        <div class="span3 offset4 well" style="text-align:center;">
+          <%= form_tag("index", method: "get", class:"form-horizontal") do %>
+            <div id="calc-screen">
+              <div class="row-fluid">
+                <%= text_field_tag "input", @input, id:"screen", readonly: "true" %>
+              </div>
+            </div><br/>
+            <div id="calc-board">
+              <div class="row-fluid">
+                <%= link_to "sin", nil, class: "btn", id:"sin" %>
+                <%= link_to "cos", nil, class: "btn", id:"cos" %>
+                <%= link_to "mod", nil, class: "btn", id:"mod" %>
+                <%= link_to "C", nil, class: "btn btn-danger", id:"c" %>
+              </div>
+              <div class="row-fluid">
+                <%= link_to "7", nil, class: "btn", id:"7" %>
+                <%= link_to "8", nil, class: "btn", id:"8" %>
+                <%= link_to "9", nil, class: "btn", id:"9" %>
+                <%= link_to "(", nil, class: "btn", id:"ob" %>
+                <%= link_to ")", nil, class: "btn", id:"cb" %>
+              </div>
+              <div class="row-fluid">
+                <%= link_to "4", nil, class: "btn", id:"4" %>
+                <%= link_to "5", nil, class: "btn", id:"5" %>
+                <%= link_to "6", nil, class: "btn", id:"6" %>
+                <%= link_to "-", nil, class: "btn", id:"minus" %>
+                <%= link_to "+", nil, class: "btn", id:"plus" %>
+              </div>
+              <div class="row-fluid">
+                <%= link_to "1", nil, class: "btn", id:"1" %>
+                <%= link_to "2", nil, class: "btn", id:"2" %>
+                <%= link_to "3", nil, class: "btn", id:"3" %>
+                <%= link_to "/", nil, class: "btn", id:"div" %>
+                <%= link_to "*", nil, class: "btn", id:"mult" %>
+              </div>
+              <div class="row-fluid">
+                <%= link_to ".", nil, class: "btn", id:"point" %>
+                <%= link_to "0", nil, class: "btn", id:"0" %>
+                <%= link_to "DEL", nil, class: "btn", id:"del" %>
+                <%= submit_tag "=", class: "btn btn-success" %>   
+              </div>
+            </div>
+          <% end %>
+          <%= p @msg %>
+        </div>
+	</body>
+</html>
