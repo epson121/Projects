@@ -1,0 +1,16 @@
+<div class="span3 bot">
+	<div id="left_select">
+		<%= select_tag "left",  options_for_select(@left, @leftSelected), class: "select" %>
+	</div>
+	<div id="left_text">
+		<%= text_field_tag 'inputLeft', @inputLeft, class: "input" %>
+	</div>
+</div>
+<div class="span3 bot" >
+	<div id="right_select">
+		<%= select_tag "right",  options_for_select(@right, @rightSelected), class: "select" %>
+	</div>
+	<div id="right_text">
+		<%= text_field_tag 'inputRight', @inputRight, class: "input" %>
+	</div>
+</div>

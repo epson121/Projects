@@ -1,0 +1,46 @@
+// Place all the styles related to the UnitConverter controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+$bg: #9EFFEF;
+$frm: #5CBFAF;
+$font_size: 1.5em;
+$font_color: black;
+
+body {
+	background: $bg;
+}
+
+.form {
+	word-wrap:break-word;
+	font-size: $font_size;
+	font-family: Monospace;
+	background: $frm;
+	padding: 1em;
+	color: $font_color;
+	text-align: center;
+}
+
+.page-header {
+	small {
+		color: $font_color;
+		font-size: 0.5em;
+	}
+	border-bottom:2px black solid;
+}
+
+.bot, .top {
+	margin-top:-1em;
+	.select{
+		width:100%;
+	}
+
+	.input {
+		width:95%;
+		height: 2em;
+		text-align: center;
+		font-size: 3em;
+	}
+
+}
+
