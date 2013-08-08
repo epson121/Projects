@@ -1,0 +1,4 @@
+$("#left").html("<%= escape_javascript(options_for_select(@left, @leftSelected)) %>") 
+$("#right").html("<%= escape_javascript(options_for_select(@right, @rightSelected)) %>") 
+$("#inputRight").val("<%= @inputRight %>");
+$("#inputLeft").val("<%= @inputLeft %>");

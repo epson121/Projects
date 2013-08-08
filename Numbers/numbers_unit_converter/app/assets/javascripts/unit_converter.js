@@ -1,5 +1,6 @@
 
 $( document ).ready(function(){
+	/*
 	$('#unit').change(function() {
 		jQuery.ajax({
 		    url: "/change",
@@ -11,9 +12,14 @@ $( document ).ready(function(){
 		    }
   		});
 	});
-	$('#inputLeft, #inputRight').on('keyup',function() {
-		$.post("/calc", {
+	*/
+	$('#unit, #left, #right').on('change',function() {
+		id = $(this).attr("id");
+		$.post("/change", {
+					"id" : id,
 					"ms" : $("#unit").val(),
+					"lv" : $("#left").val(),
+					"rv" : $("#right").val(),
 	    		"li" : $("#inputLeft").val(), 
 	    		"ri" : $("#inputRight").val()
 				}, 
@@ -21,6 +27,22 @@ $( document ).ready(function(){
 				"script"
 			);
 	});
+
+	$('#inputLeft, #inputRight').on('keyup',function() {
+		id = $(this).attr("id");
+		$.post("/calc", {
+					"id" : id,
+					"ms" : $("#unit").val(),
+					"lv" : $("#left").val(),
+					"rv" : $("#right").val(),
+	    		"li" : $("#inputLeft").val(), 
+	    		"ri" : $("#inputRight").val()
+				}, 
+				null, 
+				"script"
+			);
+	});
+
 	/*
 	$('#left, #right').change(function() {
 		jQuery.ajax({

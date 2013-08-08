@@ -3,7 +3,7 @@ NumbersUnitConverter::Application.routes.draw do
   root "unit_converter#index"
   get "/index" => "unit_converter#index"
   post "/calculate" => "unit_converter#calculate"
-  get "/change" => "unit_converter#change"
+  post "/change" => "unit_converter#change"
   get "/calc" => "unit_converter#calc"
   post "/calc" => "unit_converter#calc"
   # The priority is based upon order of creation: first created -> highest priority.
