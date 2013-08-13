@@ -1,0 +1,36 @@
+<!DOCTYPE>
+<html>
+	<%= render "/layouts/head" %>
+	<body >
+
+		<div class="navbar navbar-inverse">
+			<div class="navbar-inner">
+				<%= link_to "Alarm Clock", "/", class: "brand" %>
+			</div>
+			<div class="span4 offset1">
+				<audio autoplay="autoplay" loop="true" hidden = "true" >
+				  <source src="<%= asset_path 'alarm.mp3' %>" type="audio/mpeg">
+				  <source src="<%= asset_path 'alarm.ogg' %>" type="audio/ogg">
+				  Your browser does not support this audio format.
+				</audio>
+			</div>
+		</div>
+
+		<div class="row">
+		<div class="span6 offset4">
+			<div class="page-header">
+				<h1>Alarm Clock  <small>before you go-go</small></h1>
+			</div>
+			<div class="row">
+				<div class="span5 offset2">
+					<div id = "clock" class="top span2">
+						<%= form_tag "index", method: "POST", class:"form-horizontal" do %>
+							<%= submit_tag "STOP", class:"btn btn-danger btn-large" %>
+						<% end %>
+					</div>
+				</div>	
+			</div>
+		</div>          
+							
+	</body>
+</html>

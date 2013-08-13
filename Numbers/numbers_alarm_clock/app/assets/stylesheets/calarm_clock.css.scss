@@ -1,0 +1,40 @@
+// Place all the styles related to the UnitConverter controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+$bg: #121111;
+$frm: #5CBFAF;
+$font_size: 1.5em;
+$font_color: #E2D5D2;
+$time_size: 5em;
+$time_color: #804338;
+
+body {
+	background: $bg;
+}
+
+.form {
+	margin-top: 2em;
+	word-wrap:break-word;
+	font-size: $font_size;
+	font-family: Monospace;
+	color: $font_color;
+	text-align: center;
+}
+
+.page-header {
+	color: $font_color;
+	small {
+		color: $font_color;
+		font-size: 0.5em;
+	}
+	border-bottom:2px $font_color solid;
+}
+
+#clock {
+	margin-top: 10%;
+	font-size:$time_size;
+	color:$time_color;
+}
+
+

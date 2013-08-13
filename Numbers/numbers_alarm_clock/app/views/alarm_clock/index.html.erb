@@ -1,0 +1,43 @@
+<!DOCTYPE>
+<html>
+	<%= render "/layouts/head" %>
+	<body >
+
+		<div class="navbar navbar-inverse">
+			<div class="navbar-inner">
+				<%= link_to "Alarm Clock", "/", class: "brand" %>
+			</div>
+		</div>
+
+		<div class="row">
+		<div class="span6 offset4">
+			<div class="page-header">
+				<h1>Alarm Clock  <small>before you go-go</small></h1>
+			</div>
+			<div class="row">
+				<div class="span5 offset1">
+					<div id = "clock" class="top span2">
+					</div>
+				</div>	
+			</div>
+			<div class="row">
+				<div class="span4 offset1">
+					<div class="form">
+						<%= form_tag("set", method: "POST", remote: true, id: "form", class:"form-horizontal") do %>
+							<%= select_tag "hours",  options_for_select(@hours, @hours[0]), class: "btn btn-mini span1", size: "5" %>
+							<%= select_tag "minutes",  options_for_select(@minutes, @minutes[0]), class: "btn btn-mini span1", size: "5" %>
+					</div>
+				</div>
+			</div>
+			<div class = "row" >
+				<div class="span4 offset2" style="padding-left:0.5em;" >
+					<%= submit_tag "submit", class: "btn span2" %>
+					<% end %>
+				</div>
+				<div id="time_msg" class="form">
+				</div>
+			</div>
+		</div>          
+							
+	</body>
+</html>
