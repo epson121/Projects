@@ -1,0 +1,2 @@
+module CityDistanceHelper
+end

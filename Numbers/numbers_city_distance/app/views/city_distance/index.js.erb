@@ -1,0 +1,2 @@
+$("#distance_text").html("<%= escape_javascript(if !@left.nil? and !@right.nil?;@left[0].address + '  -  ' + @right[0].address; end)  %>")
+$("#distance").html("<%= escape_javascript(@distance)  %>")
