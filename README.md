@@ -28,7 +28,7 @@ Numbers
 
 [**Distance Between Two Cities**](https://github.com/epson121/Projects/tree/master/Numbers/numbers_city_distance) – Calculates the distance between two cities. This program may require finding coordinates for the cities like latitude and longitude.
 
-**Credit Card Validator** – Takes in a credit card number from a common credit card vendor (Visa, MasterCard, American Express, Discoverer) and validates it to make sure that it is a valid number (look into how credit cards use a checksum).
+[**Credit Card Validator**](https://github.com/epson121/Projects/tree/master/Numbers/numbers_credit_card_validator) – Takes in a credit card number and validates it to make sure that it is a valid number using luhns algorithm.
 
 **Tax Calculator** – Asks the user to enter a cost and either a country or state tax. It then returns the tax plus the total cost with tax.
 
