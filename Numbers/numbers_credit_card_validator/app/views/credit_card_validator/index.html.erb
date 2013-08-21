@@ -1,0 +1,29 @@
+<!DOCTYPE>
+<html>
+	<%= render "/layouts/head" %>
+	<body >
+
+		<div class="navbar navbar-inverse">
+			<div class="navbar-inner">
+				<%= link_to "Credit card validator", "/", class: "brand" %>
+			</div>
+		</div>
+
+		<div class="row">
+		<div class="span6 offset4">
+			<div class="page-header">
+				<h2>Credit card validator &nbsp;&nbsp;&nbsp;<small>Is it secret??? Is it safe??</small></h2>
+			</div>
+			<div class="form">
+				<%= form_tag("index", method: "POST", remote: true, id: "form", class:"form-horizontal") do %>
+					<%= text_field_tag "ccnumber", nil, placeholder: "Your credit card number", class: "input span6" %>
+					<br/><br/>
+					<%= submit_tag "Check", class:"btn btn-warning span2", id:"submit" %>
+				<% end %>
+			</div>
+			<div id = "valid" class="form" >
+			</div>
+		</div>          
+							
+	</body>
+</html>
