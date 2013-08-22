@@ -1,0 +1,9 @@
+== README
+**	get the application up and running. **
+
+* **Ruby version**: - 2.0.0p247
+* **Rails** - 4.0
+* Additional stuff: twitter-bootstrap-rails, therubyracer, less-rails 
+
+### Screenshots
+[Screenshots](https://www.dropbox.com/sh/n9jqyqqshe27u2m/BnDGRgDuBb)
