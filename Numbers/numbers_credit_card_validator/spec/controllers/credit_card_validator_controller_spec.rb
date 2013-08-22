@@ -29,6 +29,11 @@ describe CreditCardValidatorController do
 		  assigns(:message).should == "You funny kid. Enter a number! "
 		end
 
+		it "should return 'You funny kid. Enter a number! ' when no entry is posted" do
+		  post 'index' , :ccnumber => ""
+		  assigns(:message).should == "You funny kid. Enter a number! "
+		end
+
 	end
 
 	describe "GET #index" do
