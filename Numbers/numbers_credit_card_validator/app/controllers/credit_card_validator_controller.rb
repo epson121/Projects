@@ -3,7 +3,7 @@ class CreditCardValidatorController < ApplicationController
 	def index
 		begin
 			luhns(Integer(params[:ccnumber])) == true ? @message = "Nice!! Your number seems to be fine.. :) " :
-																									@message = "Oooh. :( Wrong number."
+														@message = "Oooh. :( Wrong number."
 		rescue
 			@message = "You funny kid. Enter a number! "
 		end
