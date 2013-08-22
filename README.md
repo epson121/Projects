@@ -30,7 +30,7 @@ Numbers
 
 [**Credit Card Validator**](https://github.com/epson121/Projects/tree/master/Numbers/numbers_credit_card_validator) – Takes in a credit card number and validates it to make sure that it is a valid number using luhns algorithm.
 
-**Tax Calculator** – Asks the user to enter a cost and either a country or state tax. It then returns the tax plus the total cost with tax.
+[**Tax Calculator**](https://github.com/epson121/Projects/tree/master/Numbers/numbers_tax_calculator) – Asks the user to enter a cost and state tax. It then returns the tax plus the total cost with tax.
 
 **Dijkstra’s Algorithm** – Create a program that finds the shortest path through a graph using its edges.
 
