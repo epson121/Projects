@@ -1,8 +1,7 @@
-## README
-
+== README
 ** get the application up and running.
 
 * Ruby version: - 2.0.0p247
 * Rails - 4.0
 * jquery
-* Additional stuff: twitter-bootstrap-rails, therubyracer, less-rails, rspec
+* Additional stuff: twitter-bootstrap-rails, therubyracer, less-rails 
