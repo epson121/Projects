@@ -32,7 +32,7 @@ Numbers
 
 [**Tax Calculator**](https://github.com/epson121/Projects/tree/master/Numbers/numbers_tax_calculator) – Asks the user to enter a cost and state tax. It then returns the tax plus the total cost with tax.
 
-**Dijkstra’s Algorithm** – Create a program that finds the shortest path through a graph using its edges.
+[**Dijkstra’s Algorithm**](https://github.com/epson121/Ruby/tree/master/graph) – Create a program that finds the shortest path through a graph using its edges. Ruby only.
 
 Text
 ---------
