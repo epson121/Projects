@@ -239,7 +239,7 @@ Databases
 
 **Budget Tracker** – Write an application that keeps track of a household’s budget. The user can add expenses, income, and recurring costs to find out how much they are saving or losing over a period of time. For added complexity allow the user to specify a date range and see the net flow of money in and out of the house budget for that time period.
 
-**Address Book** – Keep track of various contacts, their numbers, emails and little notes about them like a Rolodex in the database. For extra complexity, allow the user to connect to a website publish their address book based on specific options the user has set.
+[**Address Book**](https://github.com/epson121/ember-contact-list) – Keep track of various contacts, their numbers, emails and little notes about them like a Rolodex in the database. For extra complexity, allow the user to connect to a website publish their address book based on specific options the user has set. (Rails + EmberJS)
 
 **TV Show Tracker** – Got a favorite show you don’t want to miss? Don’t have a PVR or want to be able to find the show to then PVR it later? Make an application which can search various online TV Guide sites, locate the shows/times/channels and add them to a database application. The database/website then can send you email reminders that a show is about to start and which channel it will be on.
 
