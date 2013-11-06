@@ -65,7 +65,7 @@ Text
 
 **Random Gift Suggestions** – Enter various gifts for certain people when you think of them. When its time to give them a gift (xmas, birthday, anniversary) it will randomly pick one and perhaps places you can get it.
 
-**Text to HTML Generator** – Converts text files into web HTML files and stylizes them. Great for making online documentation of standard text documentation.
+[**Text to Markdown**](https://github.com/epson121/ember-markdown) – Converts text file into markdown. Great for making online documentation of standard text documentation. (EmberJS)
 
 **CD Key Generator** – Generates a unique key for your applications to use based on some arbitrary algorithm that you can specify. Great for software developers looking to make shareware that can be activated.
 
@@ -82,7 +82,7 @@ Networking
 
 **Fetch Current Weather** – Get the current weather for a given zip/postal code.
 
-**P2P File Sharing App** – Create a program like LimeWire, FrostWire, Bearshare, or a torrent style application.
+[**P2P File Sharing App**](https://github.com/epson121/P2PFileSharingSystem) – Create a program like LimeWire, FrostWire, Bearshare, or a torrent style application. (C#)
 
 **Port Scanner** – Enter an IP address and a port range where the program will then attempt to find open ports on the given computer by connecting to each of them. On any successful connections mark the port as open.
 
@@ -171,7 +171,7 @@ Web
 
 **Bookmark Collector and Sorter** – An application that you can put online for people to upload bookmarks to, have it sort them, remove duplicates and export the entire list as a Firefox/IE/Safari bookmark file. For added complexity see if you can group the bookmark items into various folders.
 
-**Password Safe** – A program which keeps track of passwords for sites or applications and encrypts them with a key so that no one can read them.
+[**Password Safe**](https://play.google.com/store/apps/details?id=kiwi.main) – A program which keeps track of passwords for sites or applications and encrypts them with a key so that no one can read them. (Java/Android)
 
 **Media Player Widget for iGoogle** – Create an iGoogle gadget which can play various song lists from your computer as well as share one song daily. Perhaps let people look up which songs you have listened to lately.
 

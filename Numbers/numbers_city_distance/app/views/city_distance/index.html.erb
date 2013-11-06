@@ -5,14 +5,16 @@
 
 		<div class="navbar navbar-inverse">
 			<div class="navbar-inner">
-				<%= link_to "City Distance", "/", class: "brand" %>
+				<%= link_to "CitiDist", "/", class: "brand" %>
 			</div>
 		</div>
-
+		<div style="float:right;">
+			<table><tr><td><iframe src="http://ghbtns.com/github-btn.html?user=epson121&repo=Projects&type=watch&count=true" height="30" width="80" frameborder="0" scrolling="0" style="width:80px; height: 30px;" allowTransparency="true"></iframe></td><td><iframe src="http://ghbtns.com/github-btn.html?user=epson121&type=follow&count=true" height="30" width="80" frameborder="0" scrolling="0" style="width:168px; height: 30px;" allowTransparency="true"></iframe></td></tr></table>
+		</div>
 		<div class="row">
 		<div class="span6 offset4">
 			<div class="page-header">
-				<h1>City Distance     <small>from here to there ( via air )</small></h1>
+				<h1>CitiDist     <small>from here to there ( via air )</small></h1>
 			</div>
 			<div class="form">
 				<%= form_tag("index", method: "POST", remote: true, id: "form", class:"form-horizontal") do %>

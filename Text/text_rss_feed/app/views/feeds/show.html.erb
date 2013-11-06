@@ -1,0 +1,26 @@
+<!DOCTYPE>
+<html>
+	<%= render "/layouts/head" %>
+	<body >
+
+		<div class="navbar navbar-inverse">
+			<div class="navbar-inner">
+				<%= link_to "Feed reader", "/", class: "brand" %>
+			</div>
+		</div>
+
+		<div class="row">
+		<div class="span6 offset4">
+			<div class="form">
+				<%= p @feed.name %>
+				<%= @entries.each do |e| %>
+				<%= p e.name %>
+				<%= p e.summary %>
+				<%= p e.url %>
+				<%= p "" %>
+				<% end %>
+			</div>
+		</div>          
+							
+	</body>
+</html>
