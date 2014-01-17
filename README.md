@@ -47,7 +47,7 @@ Text
 
 [**Count Words in a String**](https://github.com/epson121/Ruby/tree/master/various) – Counts the number of individual words in a string.
 
-**Text Editor** – Notepad style application that can open, edit, and save text documents. Add syntax highlighting and other features.
+[**Text Editor**](https://github.com/epson121/Projects/tree/master/Text/text_text_editor) – Notepad style application. Simple one, made with bootstrap-wysihtml5
 
 **RSS Feed Creator** – A program which can read in text from other sources and put it in RSS or Atom news format for syndication.
 
