@@ -84,7 +84,7 @@ Networking
 
 [**P2P File Sharing App**](https://github.com/epson121/P2PFileSharingSystem) – Create a program like LimeWire, FrostWire, Bearshare, or a torrent style application. (C#)
 
-**Port Scanner** – Enter an IP address and a port range where the program will then attempt to find open ports on the given computer by connecting to each of them. On any successful connections mark the port as open.
+[**Port Scanner**](https://github.com/epson121/Projects/tree/master/Networking/port_scanner/) – Enter an IP address and a port range where the program will then attempt to find open ports on the given computer by connecting to each of them. On any successful connections mark the port as open.
 
 **Mail Checker (POP3 / IMAP)** – The user enters various account information include web server and IP, protocol type (POP3 or IMAP) and the application will check for email on several accounts at a given interval.
 
