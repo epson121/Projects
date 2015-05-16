@@ -131,7 +131,7 @@ Classes
 
 **Shape Area and Perimeter Classes** – Create an abstract class called “Shape” and then inherit from it other shapes like diamond, rectangle, circle, triangle etc. Then have each class override the area and perimeter functionality to handle each shape type.
 
-**Matrix Class** – A class to manage matrices. Add, subtract and multiple matrices.
+[**Matrix Class**](https://github.com/epson121/ComputerGraphics/blob/master/lab5/MT3D.java) – A class to manage matrices. Add, subtract and multiple matrices.
 
 **Flower Shop Ordering To Go** – Create a flower shop application which deals in flower objects and use those flower objects in a bouquet object which can then be sold. Keep track of the number of objects and when you may need to order more.
 
@@ -181,7 +181,7 @@ Web
 
 **E-Card Generator** – Make a site that allows people to generate their own little e-cards and send them to other people. Can use flash or not. Use a picture library and perhaps insightful mottos or quotes.
 
-**Content Management System** – Create a content management system (CMS) like Joomla, Drupal, PHP Nuke etc. Start small and allow for the addition of modules/addons later.
+[**Content Management System**](https://github.com/epson121/EventsTracker) – Create a content management system (CMS) like Joomla, Drupal, PHP Nuke etc. Start small and allow for the addition of modules/addons later.
 
 **Template Maker** – Make a site or application which allows the user to enter in various color codes, elements, dimensions and constructs a template file for a particular application like PHPBB, Invision Board, MySpace, Bebo, etc.
 
